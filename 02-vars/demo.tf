@@ -54,3 +54,9 @@ variable "ex-map" {
 output "ex-map" {
     value = "welcome to ${var.ex-map["Class"]} training and schedule of training is ${var.ex-map["Duration"]} hours and scheduled time is ${var.ex-map["Batch"]}"
 }
+
+variable "city" {}
+
+output "city" {
+    value = "city name is ${var.city}"
+}
