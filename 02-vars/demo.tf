@@ -60,3 +60,9 @@ variable "city" {}
 output "city" {
     value = "city name is ${var.city}"
 }
+
+variable "state" {}
+
+output "state" {
+    value = var.state
+}
