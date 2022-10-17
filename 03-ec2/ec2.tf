@@ -17,12 +17,12 @@ output "Public_IP" {
     value = aws_instance.demo.public_ip
 }
 
+# Creates security group
 
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
-  vpc_id      = aws_vpc.main.id
-
+  
   ingress {
     description      = "SSH from VPC"
     from_port        = 22
