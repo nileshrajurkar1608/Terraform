@@ -17,6 +17,10 @@ output "Public_IP" {
     value = aws_instance.demo.public_ip
 }
 
+output "Security_group_ID" {
+    value = aws_security_group.allow_ssh.id
+}
+
 # Creates security group
 
 resource "aws_security_group" "allow_ssh" {
